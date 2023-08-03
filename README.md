@@ -37,7 +37,6 @@ The main objectives of the Biometric Routine Displayer project are as follows:
 2. Minimize scheduling conflicts and improve efficiency.
 3. Store user access details in the system.
 4. Enhance efficiency and productivity by minimizing time consumption.
-5. Utilize biometric recognition for a seamless and secure login.
 
 ## Architecture
 
