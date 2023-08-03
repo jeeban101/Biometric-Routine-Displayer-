@@ -1,77 +1,62 @@
 # Biometric Routine Displayer
 
 ## Table of Contents
+
 - [Abstract](#abstract)
+- [Problem Statement](#problem-statement)
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Objectives](#objectives)
-- [Problem Statement](#problem-statement)
-- [Existing System](#existing-system)
-- [Modules](#modules)
 - [Architecture](#architecture)
-- [Proposed Technique](#proposed-technique)
-- [Results and Discussion](#results-and-discussion)
+- [Implementation and Results](#implementation-and-results)
 - [Conclusion and Future Enhancement](#conclusion-and-future-enhancement)
 - [References](#references)
+- [Contributors](#contributors)
 
 ## Abstract
-Biometric Routine Displayer is an innovative solution designed to address the challenges individuals face in managing their daily schedules. This project utilizes biometric recognition, specifically facial recognition, to provide users with real-time access to their timetables. Users can simply scan their face or manually input their unique identity number to instantly retrieve their schedules. The system enhances time management, efficiency, and productivity across various domains such as education, workplaces, hospitals, and more.
 
-## Introduction
-Biometric Routine Displayer aims to simplify schedule management for individuals in various settings. Whether it's students in educational institutions, employees in workplaces, or medical professionals in hospitals, the system ensures that users have easy access to their daily routines. By utilizing biometric recognition and database integration, the project offers an efficient and user-friendly approach to timetable management.
-
-## Motivation
-The motivation behind Biometric Routine Displayer is rooted in addressing the common challenge of schedule management. With the increasing demand for efficient time utilization, the project seeks to provide a solution that eliminates the need for manual schedule checks. By integrating biometric recognition technology, the system enables users to access their timetables quickly and accurately, thereby enhancing productivity and reducing time wastage.
-
-## Objectives
-The primary objectives of Biometric Routine Displayer include:
-
-1. Providing easy and real-time access to users' schedules.
-2. Minimizing conflicts and optimizing timetable scheduling.
-3. Storing user details and attendance records for future reference.
-4. Improving efficiency and time management for users.
-5. Enabling both biometric and manual (registration number) login modes.
+People working in large-scale organizations often face problems regarding their schedules and time-tables. For instance, in any university students and sometimes even teachers/professors tend to forget their class schedule. It results in failure in attending class. Similar problems are faced by employees in their workplace too. In order to solve this issue, we have come up with a technological solution that provides people information about their respective schedule at the particular time hour of their day through Biometric recognition.
 
 ## Problem Statement
-The modern world often faces challenges in efficiently managing schedules. Individuals, whether students, employees, or professionals, struggle to remember and access their daily routines. This problem becomes even more pronounced in large-scale organizations. Biometric Routine Displayer aims to solve this problem by leveraging biometric recognition technology to offer seamless access to schedules and reduce time-consuming manual checks.
 
-## Existing System
-The existing system relies on conventional methods of schedule management, which often involve manual checks or accessing timetables through various platforms. Biometric Routine Displayer introduces a more streamlined and convenient approach by integrating biometric recognition, which eliminates the need for manual searches and ensures accurate and efficient schedule retrieval.
+The modern work and education environments often involve complex schedules that can be challenging to manage. People struggle with remembering their class or work timings, leading to inefficiencies and missed opportunities. The Biometric Routine Displayer project aims to address this problem by utilizing biometric recognition technology to provide users with easy access to their daily schedules.
 
-## Modules
-The Biometric Routine Displayer project comprises the following modules:
+## Introduction
 
-1. Attendance.csv: Contains details of users who have accessed the system.
-2. FacematchProject.py: Includes functions and code for the project.
-3. ImageAttendance: Stores images of users for facial recognition.
-4. UserDetails: Contains user information, including registration numbers, names, and course session details.
+In this project, we present an innovative solution to the problem of managing and accessing daily schedules. The Biometric Routine Displayer leverages biometric recognition, specifically facial recognition, to allow users to retrieve their schedules conveniently and efficiently. Users can simply scan their face or manually enter their unique identity (e.g., registration number) to access their daily timetable.
+
+## Motivation
+
+This project was conceived to address the challenges faced by individuals in organizations, schools, and universities when managing their schedules. As one of the contributors to this project, I, Jeeban, handled the user detection and data retrieval aspects of the system. My focus was on developing the facial recognition component and integrating it with the database to fetch users' schedules.
+
+## Objectives
+
+The main objectives of the Biometric Routine Displayer project are as follows:
+
+1. Provide easy access for users to view their daily schedules.
+2. Minimize scheduling conflicts and improve efficiency.
+3. Store user access details in the system.
+4. Enhance efficiency and productivity by minimizing time consumption.
+5. Utilize biometric recognition for a seamless and secure login.
 
 ## Architecture
-The project follows a modular architecture that incorporates various components:
 
-1. Database Connectivity: Establishes connection with MySQL database for data storage.
-2. Biometric Recognition: Utilizes OpenCV and face_recognition modules for facial recognition.
-3. Attendance Logging: Records user attendance and time of access in the Attendance.csv file.
-4. Data Retrieval: Fetches schedule data from the database based on user inputs.
+The architecture of the Biometric Routine Displayer consists of several key components:
 
-## Proposed Technique
-Biometric Routine Displayer operates based on a user-friendly approach:
+- User Input: Users can access their schedules by either scanning their face using the OpenCV-Python library or manually entering their unique identity, such as a registration number.
+- Data Retrieval: The system fetches the schedule data from a MySQL database, which contains tables for each day of the week.
+- User Interface: The application presents the retrieved schedule to the user, displaying either the entire day's timetable or the schedule for the current time period.
 
-1. Users can log in using biometric (facial recognition) or manual (registration number) modes.
-2. Facial recognition technology scans the user's face and matches it with stored data.
-3. Upon successful recognition, the system displays the user's timetable for the chosen period.
-4. The system also logs the user's attendance and access time in the Attendance.csv file and the database.
+## Implementation and Results
 
-## Results and Discussion
-The implementation of Biometric Routine Displayer has yielded promising results. Users can seamlessly access their schedules in real time using either biometric or manual methods. The system's accuracy and efficiency contribute to enhanced time management and productivity. The project demonstrates the feasibility of leveraging biometric recognition for schedule management across various domains.
+The project is implemented using Python and MySQL. The facial recognition functionality is achieved through the OpenCV-Python library. The system successfully recognizes users' faces and retrieves their schedules based on the current day and time.
 
 ## Conclusion and Future Enhancement
-Biometric Routine Displayer offers an efficient solution to schedule management challenges by utilizing biometric recognition technology. The project's success in providing real-time schedule access demonstrates its potential for adoption in educational institutions, workplaces, hospitals, and other settings. As a future enhancement, additional features such as fingerprint scanning and master timetable generation could be explored to further improve the system's capabilities.
 
-## References
-1. W3Schools - Python MySQL Tutorial: https://www.w3schools.com/python/python_mysql_getstarted.asp
-2. Stack Overflow - OpenCV Camera: https://stackoverflow.com/questions/46821936/open-cv-close-camera
-3. Stack Overflow - Face Recognition Installation: https://stackoverflow.com/questions/52332268/pip-install-face-recognition-giving-error
-4. OpenCV Python Documentation: https://pypi.org/project/opencv-python/
-5. W3Schools - Python MySQL SELECT: https://www.w3schools.com/python/python_mysql_select.asp
-6. YouTube - OpenCV Face Recognition: https://www.youtube.com/watch?v=sz25xxF_AVE
+The Biometric Routine Displayer project offers a practical and efficient solution for managing schedules. It simplifies the process of accessing daily timetables, especially in large-scale organizations and educational institutions. Future enhancements could include the integration of additional biometric modalities, such as fingerprint recognition, and the development of a master timetable generation feature.
+
+## Contributors
+
+- Jeeban: User detection and data retrieval from the database.
+
+This project was initially developed as a team project, with each contributor focusing on specific aspects. The use of biometric recognition technology adds a layer of convenience and security to schedule management, benefiting a wide range of users.
