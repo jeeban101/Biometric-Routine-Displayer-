@@ -57,5 +57,7 @@ The Biometric Routine Displayer project offers a practical and efficient solutio
 ## Contributors
 
 - Jeeban: User detection and data retrieval from the database.
+- 
+- 
 
 This project was initially developed as a team project, with each contributor focusing on specific aspects. The use of biometric recognition technology adds a layer of convenience and security to schedule management, benefiting a wide range of users.
